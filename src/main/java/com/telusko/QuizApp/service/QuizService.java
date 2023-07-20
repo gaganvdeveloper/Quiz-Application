@@ -68,7 +68,7 @@ public class QuizService {
 		int result = 0;
 		int i = 0;
 		for (Response r : responses) {
-			if (r.getResponse().equals(questions.get(i).getRightAnswer()))
+			if (r.getResponse().equalsIgnoreCase(questions.get(i).getRightAnswer()))
 				result++;
 			i++;
 		}
