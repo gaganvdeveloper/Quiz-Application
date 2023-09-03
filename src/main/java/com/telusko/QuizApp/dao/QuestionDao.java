@@ -1,11 +1,8 @@
 package com.telusko.QuizApp.dao;
-
 import java.util.List;
 import java.util.Optional;
-
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Repository;
-
 import com.telusko.QuizApp.model.Question;
 import com.telusko.QuizApp.responsestructure.QuestionRepository;
 
@@ -37,5 +34,4 @@ public class QuestionDao {
 	public List<Question> findRandomQuestions(String category, int numQ) {
 		return repository.findRandomQuestions( category, numQ);
 	}
-	
 }
